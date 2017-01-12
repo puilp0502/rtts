@@ -1,0 +1,14 @@
+h1.center {
+    margin-top: 25%;
+    color: white;
+}
+h5.center {
+    color: white;
+}
+html {
+    height: 100%;
+    background-image: linear-gradient(-45deg, #5641db 0%, #1f86ef 100%);
+}
+a.blue:hover {
+    background-color: #42a5f5 !important;
+}

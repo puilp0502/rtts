@@ -1,0 +1,44 @@
+.input-field input[type=text]:focus + label {
+    color: #448aff;
+}
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #448aff;
+    box-shadow: 0 1px 0 0 #448aff;
+}
+html {
+    height: 100%;
+    background-color: #0d47a1
+
+}
+body {
+    color: white;
+}
+h1 {
+    color: white;
+}
+.input-field.m1 a, .input-field.m1 button {
+    padding-left: 45%;
+    padding-right: 45%;
+}
+.rt {
+    margin-top: 0;
+    font-size: 0.8em;
+}
+.op {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+.timestamp {
+    font-size: 0.6em;
+}
+a {
+    color: #90caf9;
+}
+.header {
+    background-color: #0d47a1;
+    position: fixed;
+    width: inherit;
+}
+#rtt {
+    padding-top: 250px;
+}

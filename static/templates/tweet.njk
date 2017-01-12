@@ -1,0 +1,32 @@
+<div class="row no-margin">
+    {% if tweet.retweeted_status %}
+        <div class="col s3">
+            <p class="rt"><a target="_blank" href="https://twitter.com/{{ tweet.user.screen_name }}">{{ tweet.user.name }}</a> retweeted</p>
+            <p class="op"><a target="_blank" href="https://twitter.com/{{ tweet.retweeted_status.user.screen_name }}">{{ tweet.retweeted_status.user.name }}</a></p>
+            <p class="timestamp">{{ tweet.time }}</p>
+        </div>
+        <div class="col s9"
+             onclick="window.open('https://twitter.com/{{ tweet.retweeted_status.user.screen_name }}/status/{{ tweet.retweeted_status.id_str }}','_blank')">
+            {{ tweet.retweeted_status.text | safe }}
+        </div>
+    {% elif tweet.quoted_status %}
+        <div class="col s3">
+            <p class="rt"><a target="_blank" href="https://twitter.com/{{ tweet.user.screen_name }}">{{ tweet.user.name }}</a> quoted</p>
+            <p class="op"><a target="_blank" href="https://twitter.com/{{ tweet.quoted_status.user.screen_name }}">{{ tweet.quoted_status.user.name }}</a></p>
+            <p class="timestamp">{{ tweet.time }}</p>
+        </div>
+        <div class="col s9"
+             onclick="window.open('https://twitter.com/{{ tweet.user.screen_name }}/status/{{ tweet.id_str }}','_blank')">
+            {{ tweet.text | safe }} <br>
+            {{ tweet.quoted_status.text | safe }}
+        </div>
+    {% else %}
+        <div class="col s3">
+            <p class="op"><a target="_blank" href="https://twitter.com/{{ tweet.user.screen_name }}">{{ tweet.user.name }}</a>
+            <p class="timestamp">{{ tweet.time }}</p>
+        </div>
+        <div class="col s9"
+             onclick="window.open('https://twitter.com/{{ tweet.user.screen_name }}/status/{{ tweet.id_str }}','_blank')">
+            {{ tweet.text | safe }}</div>
+    {% endif %}
+</div>

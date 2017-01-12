@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <script src="/static/dist/vendor.bundle.js"></script>
+    <script src="/static/dist/app.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Search - RTTS</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Search</h1>
+        <form id="dummy-form">
+            <div class="row valign-wrapper">
+                <div class="col s12 m10 input-field">
+                    <input id="query" type="text" placeholder="여기에 검색어를 입력하세요. 쉼표로 키워드를 구분합니다."/>
+                </div>
+                <div class="col s6 m1 input-field valign">
+                    <button id="send" class="waves-effect waves-light btn blue" type="submit"><i class="material-icons">search</i></button>
+                </div>
+                <div class="col s6 m1 input-field valign">
+                    <a id="stop" class="waves-effect waves-light btn blue disabled"><i class="material-icons">stop</i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="rtt"></div>
+</div>
+</body>
+</html>

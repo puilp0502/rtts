@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/static/dist/vendor.bundle.js"></script>
+    <script src="/static/dist/index.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>RTTS</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h1 class="center">Realtime Twitter Search</h1>
+        </div>
+        <div class="col s12">
+            <h5 class="center">See what's going on, <strong>in real time</strong>.</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="center">
+                <a class="blue waves-effect waves-light btn-large" href="{{ url_for('realtime') }}"><i class="material-icons right">send</i>Start Searching</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
