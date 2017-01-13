@@ -85,9 +85,12 @@ def authenticate():
 
 @app.route('/revoke')
 def revoke():
-    del session['request_token']
-    del session['access_token']
-    del session['access_token_secret']
+    try:
+        del session['request_token']
+        del session['access_token']
+        del session['access_token_secret']
+    except KeyError:
+        pass
     return redirect(url_for('index'))
 
 
@@ -158,4 +161,4 @@ def stop_stream(sid):
 
 
 if __name__ == '__main__':
-    socketio.run(app, port=80, debug=True)
+    socketio.run(app)
