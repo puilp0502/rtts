@@ -86,7 +86,6 @@ def authenticate():
 @app.route('/revoke')
 def revoke():
     try:
-        del session['request_token']
         del session['access_token']
         del session['access_token_secret']
     except KeyError:

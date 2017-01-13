@@ -61,7 +61,13 @@ jQuery(document).ready(function(){
         $('#rtt').prepend(node);
     });
     socket.on('error', function(msg){
-        $('#rtt').prepend('<div class="red darken-3 text-center">Error occured:'+msg+"</div>")
+        if (msg == "401"){
+            console.log("Unauthorized; redirecting to authentication page");
+            $('#rtt').prepend('<div class="red darken-3 text-center">Unauthorized; Redirecting to authentication page</div>');
+            window.location = '/authenticate';
+        } else {
+            $('#rtt').prepend('<div class="red darken-3 text-center">Error occured:'+msg+"</div>")
+        }
     })
 });
 
