@@ -1,4 +1,7 @@
 # RTTS
+RTTS - Search tweets, in real time.   
+  
+![asdf](rtts.png)
 ## Demo
 http://rtt.hakk.kr
 ## Installation
