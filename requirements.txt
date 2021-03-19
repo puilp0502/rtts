@@ -10,7 +10,7 @@ greenlet==0.4.11
 gunicorn==19.9.0
 idna==2.7
 itsdangerous==0.24
-Jinja2==2.9.4
+Jinja2==2.11.3
 MarkupSafe==0.23
 monotonic==1.5
 oauthlib==2.0.1
