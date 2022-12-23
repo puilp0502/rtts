@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rtts"
+version = "0.1.0"
+description = ""
+authors = ["Frank Yang <puilp0502@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask-SocketIO = "^2.8.2"
+gunicorn = {git = "https://github.com/benoitc/gunicorn", rev = "1efc5d9"}
+tweepy = "^3.6.0"
+eventlet = "~0.33.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
