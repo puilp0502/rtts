@@ -1,10 +1,10 @@
 [[package]]
 name = "bidict"
-version = "0.21.4"
+version = "0.22.0"
 description = "The bidirectional mapping library for Python."
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [[package]]
 name = "certifi"
@@ -93,15 +93,15 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 name = "flask-socketio"
-version = "2.9.6"
+version = "5.3.2"
 description = "Socket.IO integration for Flask applications"
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
 
 [package.dependencies]
 Flask = ">=0.9"
-python-socketio = ">=1.6.1"
+python-socketio = ">=5.0.2"
 
 [[package]]
 name = "greenlet"
@@ -309,12 +309,12 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "06a4f3941f7f5edda090dc1a37ffa2dd2325909b7975db9b47d9ed90346daae7"
+content-hash = "01b5c85e49b128acb438f7fe976a44ff9a73c088d596fae7baee9520669164e4"
 
 [metadata.files]
 bidict = [
-    {file = "bidict-0.21.4-py3-none-any.whl", hash = "sha256:3ac67daa353ecf853a1df9d3e924f005e729227a60a8dbada31a4c31aba7f654"},
-    {file = "bidict-0.21.4.tar.gz", hash = "sha256:42c84ffbe6f8de898af6073b4be9ea7ccedcd78d3474aa844c54e49d5a079f6f"},
+    {file = "bidict-0.22.0-py3-none-any.whl", hash = "sha256:415126d23a0c81e1a8c584a8fb1f6905ea090c772571803aeee0a2242e8e7ba0"},
+    {file = "bidict-0.22.0.tar.gz", hash = "sha256:5c826b3e15e97cc6e615de295756847c282a79b79c5430d3bfc909b1ac9f5bd8"},
 ]
 certifi = [
     {file = "certifi-2022.12.7-py3-none-any.whl", hash = "sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18"},
@@ -345,8 +345,8 @@ flask = [
     {file = "Flask-2.0.3.tar.gz", hash = "sha256:e1120c228ca2f553b470df4a5fa927ab66258467526069981b3eb0a91902687d"},
 ]
 flask-socketio = [
-    {file = "Flask-SocketIO-2.9.6.tar.gz", hash = "sha256:f49edfd3a44458fbb9f7a04a57069ffc0c37f000495194f943a25d370436bb69"},
-    {file = "Flask_SocketIO-2.9.6-py2.py3-none-any.whl", hash = "sha256:be85842328f7847f511cf8cd828739884403b86ab5b0d576dae4241dd920b415"},
+    {file = "Flask-SocketIO-5.3.2.tar.gz", hash = "sha256:11d1d78b8805cda351b27828a110b88c74a573be62b07f7f5a519fb67fae0a58"},
+    {file = "Flask_SocketIO-5.3.2-py3-none-any.whl", hash = "sha256:04093e3ca144467f9731c376796aff105d182ac4cccfcb056d05d567a675f306"},
 ]
 greenlet = [
     {file = "greenlet-2.0.1-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:9ed358312e63bf683b9ef22c8e442ef6c5c02973f0c2a939ec1d7b50c974015c"},
